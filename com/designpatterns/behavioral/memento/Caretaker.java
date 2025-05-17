@@ -7,7 +7,11 @@ import java.util.Stack;
  * It saves and restores the state of the TextEditor.
  */
 public class Caretaker {
-    private final Stack<EditorMemento> mementoStack = new Stack<>();
+    private final Stack<EditorMemento> mementoStack;
+
+    public Caretaker() {
+        mementoStack = new Stack<>();
+    }
 
     public void save(TextEditor editor) {
         mementoStack.push(editor.save());
