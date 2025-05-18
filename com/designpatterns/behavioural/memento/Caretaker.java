@@ -1,16 +1,17 @@
-package com.designpatterns.behavioral.memento;
+package com.designpatterns.behavioural.memento;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * Caretaker class that manages the mementos for the TextEditor.
  * It saves and restores the state of the TextEditor.
  */
 public class Caretaker {
-    private final Stack<EditorMemento> mementoStack;
+    private final Deque<EditorMemento> mementoStack;
 
     public Caretaker() {
-        mementoStack = new Stack<>();
+        mementoStack = new ArrayDeque<>();
     }
 
     public void save(TextEditor editor) {

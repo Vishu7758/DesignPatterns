@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.memento;
+package com.designpatterns.behavioural.memento;
 
 /**
  * Memento class that stores the state of the TextEditor.
