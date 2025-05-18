@@ -1,4 +1,4 @@
-package com.designpatterns.behavioral.memento;
+package com.designpatterns.behavioural.memento;
 
 /**
  * Originator class that represents the state of the text editor.
