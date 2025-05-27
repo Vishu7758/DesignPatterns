@@ -1,11 +1,11 @@
 package com.designpatterns.creational.builder;
 
 public class Meal {
-    private String mainCourse;
-    private String sideDish;
-    private String drink;
-    private String dessert;
-    private String appetizer;
+    private final String mainCourse;
+    private final String sideDish;
+    private final String drink;
+    private final String dessert;
+    private final String appetizer;
 
     private Meal(MealBuilder builder) {
         this.mainCourse = builder.mainCourse;
